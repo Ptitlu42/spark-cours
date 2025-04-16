@@ -75,25 +75,24 @@ object Rdd_test {
         // println("\nMots dans xtx.txt:")
         // motsXtx.collect().foreach(println)
 
-        val df_adresses = MaSession.read
-            .format("com.databricks.spark.csv")
-            .option("header", "false")
-            .load("src/main/resources/full.csv")
+    //     val df_adresses = MaSession.read
+    //         .format("com.databricks.spark.csv")
+    //         .option("header", "false")
+    //         .load("src/main/resources/full.csv")
 
-        df_adresses.columns.foreach(println)
+    //     df_adresses.columns.foreach(println)
 
 
-        val df_adresses_clean = df_adresses.select(
-            col("id"),
-            col("numero_voie"),
-            col("code_postal"),
-            col("nom_commune"),
-            col("source"),
-            col("latitude"),
-            col("longitude")
-        )
+    //     val df_adresses_clean = df_adresses.select(
+    //         col("id"),
+    //         col("numero_voie"),
+    //         col("code_postal"),
 
-        df_adresses_clean.show(10)
-    }
+    //         col("nom_commune"),
+    //         col("source"),
+    //         col("latitude"),
+    //         col("longitude")
+    //     )
+    //     df_adresses_clean.show(5)
+    // }
 }
-  

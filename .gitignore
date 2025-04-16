@@ -42,3 +42,4 @@ project/target/
 .Trashes
 ehthumbs.db
 Thumbs.db 
+src/main/resources/full.csv
